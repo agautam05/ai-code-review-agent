@@ -1,0 +1,12 @@
+package com.aman.codereview.dto.groq;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class GroqMessage {
+
+    private String role;
+    private String content;
+}
