@@ -1,38 +1,64 @@
-# AI Code Review Agent
+# AI Code Review Agent 🚀
+
+An AI-powered code review platform that helps developers improve code quality through intelligent analysis, issue detection, historical learning, and personalized recommendations.
 
 ## Problem Statement
 
-Code review is often slow, repetitive, and inconsistent. Traditional linters can detect syntax issues but fail to understand team-specific coding standards, recurring mistakes, and architectural preferences.
+Code reviews are often slow, repetitive, and inconsistent. Traditional linters can detect syntax issues but fail to understand recurring mistakes, coding habits, and team-specific development patterns.
 
-Our AI Code Review Agent helps developers improve code quality by analyzing source code, tracking review history, identifying recurring issues, and generating personalized recommendations over time.
+The AI Code Review Agent addresses this challenge by analyzing source code, tracking historical reviews, identifying recurring issues, and providing personalized recommendations that help developers continuously improve.
 
-## Features
+---
 
-- AI-powered code review
-- Multi-language code analysis
+## Key Features
+
+### AI-Powered Code Analysis
+- Multi-language code review
 - Code quality scoring
+- AI-generated suggestions
+- Improved code generation
+
+### Security & Performance Analysis
 - Security vulnerability detection
-- Performance optimization suggestions
-- AI-generated improved code
+- Performance optimization recommendations
+- Code smell identification
+- Best-practice validation
+
+### Learning From Historical Reviews
 - Review history tracking
 - Recurring issue detection
 - Personalized recommendations
-- PDF report generation
-- JWT-based authentication
-- Admin dashboard and analytics
+- Developer improvement insights
+
+### Analytics Dashboard
+- Review statistics
+- Issue frequency analysis
+- Issue distribution visualization
+- Performance tracking
+
+### Additional Features
+- JWT Authentication
+- Role-Based Access Control
+- PDF Report Export
+- Admin Dashboard
+
+---
 
 ## How It Works
 
 1. User submits source code.
-2. The backend sends the code to the AI model.
-3. The AI analyzes the code and generates:
-   - Quality score
+2. Spring Boot API processes the request.
+3. Code is analyzed using Groq AI.
+4. AI generates:
+   - Code Quality Score
    - Issues
    - Suggestions
-   - Improved code
-4. Reviews are stored in MongoDB.
-5. Previous reviews are analyzed to identify recurring mistakes.
-6. Personalized recommendations are generated based on review history.
+   - Improved Code
+5. Review data is stored in MongoDB.
+6. Historical reviews are analyzed to identify recurring coding mistakes.
+7. Personalized recommendations are generated based on previous review patterns.
+
+---
 
 ## Tech Stack
 
@@ -50,41 +76,73 @@ Our AI Code Review Agent helps developers improve code quality by analyzing sour
 - Axios
 - Chart.js
 
+---
+
+## System Architecture
+
+```text
+React Frontend
+      │
+      ▼
+Spring Boot REST API
+      │
+      ▼
+    Groq AI
+      │
+      ▼
+   MongoDB
+```
+
+---
+
 ## Key Innovation
 
-Unlike traditional code review tools, the system stores review history and tracks recurring coding issues. This enables personalized recommendations and helps developers continuously improve based on past mistakes.
+Unlike traditional code review tools, the AI Code Review Agent stores historical reviews, identifies recurring mistakes, and generates personalized recommendations based on previous coding patterns.
 
-## Architecture
+This enables continuous developer improvement rather than one-time code analysis.
 
-Frontend (React)
-↓
-Spring Boot REST API
-↓
-Groq AI
-↓
-MongoDB
+---
+
+## Screenshots
+
+### AI Code Review
+(Add Screenshot)
+
+### Personalized Recommendations
+(Add Screenshot)
+
+### Recurring Issue Detection
+(Add Screenshot)
+
+### Dashboard Analytics
+(Add Screenshot)
+
+### Review History
+(Add Screenshot)
+
+---
 
 ## Future Improvements
 
 - Team-wide coding standards learning
-- GitHub repository integration
-- Pull Request reviews
-- CI/CD integration
-- Advanced security analysis
-- Team analytics dashboard
+- GitHub Repository Integration
+- Pull Request Reviews
+- CI/CD Integration
+- Advanced Security Analysis
+- Team Analytics Dashboard
 
-## Screenshots
-
-(Add screenshots here)
-
-## Repositories
-
-Backend:
-https://github.com/agautam05/ai-code-review-agent
-
-Frontend:
-https://github.com/agautam05/ai-code-review-agent-frontend
+---
 
 ## Author
 
-Aman Gautam
+**Aman Gautam**
+
+---
+
+## Repositories
+
+Frontend Repository:
+https://github.com/agautam05/ai-code-review-agent-frontend
+
+Backend Repository:
+https://github.com/agautam05/ai-code-review-agent
